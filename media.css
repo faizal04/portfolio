@@ -36,8 +36,9 @@
 
   
     .hamburger {
-        /* position: fixed; */
-      display: block;
+        position: relative;
+        top: 1rem;
+        display: block;
       z-index: 10;
     }
  
