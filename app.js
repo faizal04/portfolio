@@ -1,58 +1,46 @@
-// console.log("hello world")
-// console.log("faisal harray")
-// function myFunction() {
-//   document.getElementById("the").style.display = "none";
-// }
-// function myFunction(element){
-//     var hide = element.style.backgroundColor;
-//     if(hide == "red"){
-//         element.style.backgroundColor = "green";
-//     }
-//     else{
-//         element.style.backgroundColor = "red";
-//     }
-// }
-// document.getElementById("about").addEventListener("click",function()
-// {
-//     var hide=document.getElementById("p");
-//     if(hide.style.display == "block"){
-//         hide.style.display = "none";
-//     }
-//     else{
-//         hide.style.display = "block";
-//     }
-// })
-// document.getElementById("beginning").addEventListener("click",function()
-// {
-//     var hide=document.getElementById("p2");
-//     if(hide.style.display == "none"){
-//         hide.style.display = "block";
-//     }
-//     else{
-//         hide.style.display = "none";
-//     }
-// })
+// Get references to the elements to be toggled
+var p1 = document.getElementById("p1");
+var p2 = document.getElementById("p2");
+var p3 = document.getElementById("p3");
+var p4 = document.getElementById("p4");
 
 
-// document.getElementById("first").addEventListener("click",function()
-// {
-//     var hide=document.getElementById("p3");
-//     if(hide.style.display == "none"){
-//         hide.style.display = "block";
-//     }
-//     else{
-//         hide.style.display = "none";
-//     }
-// })
+// Show the "about" element when the window loads
+window.addEventListener("load", function () {
+    toggleDisplay(p1);
+});
 
+// Add event listeners to the buttons
+document.getElementById("about").addEventListener("click", function () {
+    toggleDisplay(p1);
+});
 
-// document.getElementById("career").addEventListener("click",function()
-// {
-//     var hide=document.getElementById("p4");
-//     if(hide.style.display == "block"){
-//         hide.style.display = "none";
-//     }
-//     else{
-//         hide.style.display = "block";
-//     }
-// })
+document.getElementById("beginning").addEventListener("click", function () {
+    toggleDisplay(p2);
+});
+
+document.getElementById("first").addEventListener("click", function () {
+    toggleDisplay(p3);
+});
+
+document.getElementById("career").addEventListener("click", function () {
+    toggleDisplay(p4);
+});
+
+// Function to toggle the display of an element and hide all others
+function toggleDisplay(elementToShow) {
+    var elementsToHide = [p1, p2, p3, p4];
+
+    elementsToHide.forEach(function (element) {
+        if (element != elementToShow) {
+            element.style.display = 'none';
+        }
+    });
+
+    if (elementToShow.style.display == "block") {
+        elementToShow.style.display = "none";
+    }
+    else {
+        elementToShow.style.display = "block";
+    }
+}
