@@ -1,0 +1,48 @@
+
+.loader{
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Questrial, Impact, sans-serif;
+}
+
+    img{
+        filter: invert();
+        animation: logo 5000ms forwards linear;
+        opacity: 0;
+
+    }
+    .line{
+        display: flex;
+        background-color: rgb(20, 50, 77);
+        height: 0.1rem;
+        width: 0.1rem;
+        animation: liner 5000ms forwards linear;
+    }
+    .load{
+        display: flex;
+        justify-content: center;
+    }
+    @keyframes liner {
+        from {
+            width: 0.1rem;
+          }
+          to {
+            width: 100%;
+          }
+        
+    }
+    @keyframes logo {
+        from {
+         opacity: 0;
+        }
+        to {
+        opacity: 100;
+        }
+    }
