@@ -2,6 +2,8 @@
 * {
     padding: 0%;
     margin: 0%;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -33,6 +35,7 @@ a {
 }
 
 P {
+    font-weight: 100;
     font-size: medium;
     color: white;
 }
@@ -66,7 +69,6 @@ h1 {
     /* width: 100%; */
     display: flex;
     flex: 1 1 20rem;
-    margin-left: 2rem;
     align-items: center;
     justify-content: center;
     color: white;
@@ -74,7 +76,7 @@ h1 {
 }
 
 .loc-head {
-
+display: block;
     display: flex;
     flex: 1 1 20rem;
     justify-content: space-around;
@@ -146,13 +148,13 @@ h1 {
 
 /*  section 3 starts here */
 .section3 {
-    min-height: 100vh;
-    background-color: azure;
+    min-height: 80vh;
+    /* background-color: azure; */
 }
 
 .main-head {
-    overflow: hidden;
-    height: 30vh;
+    /* overflow: hidden; */
+    min-height:15vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -206,8 +208,10 @@ h1 {
     bottom: 0;
     position: absolute;
     z-index: 10;
-    color: red;
-    background: red;
+    color: orange;
+}
+.inv{
+    filter: invert();
 }
 
 
@@ -217,7 +221,10 @@ h1 {
 
 
 .skills-section {
-    min-height: 20vh;
+    overflow-x: hidden;
+
+
+    min-height: 30vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -227,8 +234,6 @@ h1 {
 
 .skill {
     height: 7rem;
-    margin: 1rem;
-    background-color: rgb(14, 10, 10);
     border: none;
     border-radius: 15px;
     flex-wrap: wrap;
@@ -237,14 +242,18 @@ h1 {
 }
 
 .skills {
+
     display: flex;
+    justify-content: space-around;
     /* flex-direction: row; */
     flex: 1 1 20rem;
-    /* flex-wrap: wrap; */
 }
 
 .skills-2 {
+
     display: flex;
+    justify-content: space-around;
+
     flex-direction: row;
     flex: 1 1 20rem;
     /* flex-wrap: wrap; */
@@ -254,7 +263,7 @@ h1 {
 /*  section 5 starts here  */
 .section5 {
     background-color: black;
-    height: 70vh;
+   min-height: 50vh;
 
     display: flex;
     position: relative;
@@ -262,14 +271,13 @@ h1 {
 }
 
 .contact {
-    border: 10px solid cyan;
+    
     height: 50vh;
     display: flex;
     flex-direction: column;
     flex: 1 1 20rem;
     justify-content: space-evenly;
     align-items: center;
-    /* position: relative; */
 
 }
 
@@ -278,25 +286,22 @@ h1 {
 }
 
 .contact-us {
-    border: 10px solid cyan;
-    min-height: 40vh;
     height: 50vh;
     display: flex;
     flex: 1 1 20rem;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 form {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .cu {
     overflow: hidden;
-    margin-right: 2rem;
-    padding-right: 8rem;
     margin-top: 3rem;
     background: transparent;
     border: none;
@@ -310,19 +315,14 @@ form {
 
 .icon {
     background: black;
-    min-height: 10vh;
     display: flex;
-    justify-content: center;
-    /* align-items: end; */
     justify-content: space-evenly;
 }
 
 form .btn {
-    /* text-align: end; */
     padding-right: 7rem;
     margin: 2rem 0rem 0 7rem;
     border: none;
-    /* background: red; */
 }
 
 
@@ -337,13 +337,47 @@ footer h2 {
     font-size: medium;
 }
 
-#career,
-#first,
-#bout,
-#beginning {
-    display: none;
-}
-
 .about-me p {
     display: none;
 }
+
+
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2rem;
+  position: relative;
+    top: 0.5rem;
+    right: 2rem;
+}
+/* .loc-head.active {
+    background-color: #000;
+    color: #831b1b;
+  } */
+  
+
+/* .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    font-size: 2rem;
+    background-color: #333;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+} */

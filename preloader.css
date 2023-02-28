@@ -12,10 +12,11 @@
     font-family: Questrial, Impact, sans-serif;
 }
 
-    img{
+    .pre-logo{
         filter: invert();
         animation: logo 5000ms forwards linear;
         opacity: 0;
+        z-index: 100;
 
     }
     .line{

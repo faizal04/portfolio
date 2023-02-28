@@ -1,11 +1,50 @@
-@media (max-width: 650px) {
-    .main-img{
-        overflow: hidden;
-        height:12rem;
-        width:20rem;
+@media (max-width: 700px){
+.loc-head {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: #333;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loc-head.active {
+    display: flex;
+    animation: slide-down 1s forwards;
+}
+
+.loc-head li {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around ;
+
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
     }
-    .loc-head{
-        display: none;
+    to {
+        transform: translateY(0%);
+    }
+}
+
+  
+    .hamburger {
+        /* position: fixed; */
+      display: block;
+      z-index: 10;
+    }
+ 
+  
+  
+    header h1{
+        justify-content: center;
     }
     .section1{
         margin-left: 2rem;
@@ -21,6 +60,7 @@
         margin: 1rem;
     }
     .skill{
+        margin: auto;
         height: 5rem;
         width: 5rem;
     }
@@ -28,70 +68,35 @@
         height: 2rem;
     
     }
-    .cu{
-        padding: 0rem;
+    .project1 a h2{
+        font-size: 1.3rem;
     }
 
-    
 }
-@media (max-width: 450px) {
-    .main-img{
-        overflow: hidden;
-        height:7rem;
-        width:10rem;
-    }
-    .section1{
-        margin-left: 2rem;
-    }
-    .section1 p{
-        font-size: small;
-    }
-    .btn{
-        margin-top: 1rem;
-        padding: 0.5rem;
 
+@media (max-width: 450px) {
+
+    h1,h2,h3{
+        font-size: 1.5rem;
     }
-    h1{
-        align-items: center;
-        justify-content: center;
-        color: white;
-    }
-    .about-me{
-        height: auto;
-        width: 100vw;
-        margin: 1rem;
-    }
-    .main button{
-        padding: 0;
-        font-weight: 100;
-        font-size: 0.6rem;
-    }
-    .about-me p{
-        font-size: 1rem;
+    p{
+        font-size: small;
         word-spacing: 0.2rem;
     }
+    a{
+        font-size: small;
+
+    }
     .project1{
-        height: 8rem;
-        width: 8rem;
+        height: 10rem;
+        width: 10rem;
     }
     .skill{
-        height: 3rem;
-        width: 3rem;
+        height: 2.8rem;
+        width: 2.8rem;
     }
-    .icon a img{
-        height: 1rem;
-    
+    .main-head h1 {
+        font-size: large;
     }
-    .contact h2{
-        font-size: small;
-    }
-    .contact a{
-        font-size: small;
-    }
-    .cu{
-        padding: -0.2rem;
-    }
-    
-
     
 }
