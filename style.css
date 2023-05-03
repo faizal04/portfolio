@@ -239,8 +239,6 @@ display: block;
 
 .skills-section {
     overflow-x: hidden;
-
-
     min-height: 30vh;
     background-color: black;
     display: flex;
@@ -323,6 +321,7 @@ form {
     background: transparent;
     border: none;
     border-bottom: 2px solid white;
+    color: aliceblue;
 }
 
 .icon a img {
