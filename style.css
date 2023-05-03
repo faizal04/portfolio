@@ -13,7 +13,18 @@ h4,
 li {
     text-transform: capitalize;
 }
-
+::placeholder { 
+    color: rgb(113, 113, 161);
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+    color: rgb(113, 113, 161);
+  }
+  
+  ::-ms-input-placeholder { 
+    color: rgb(113, 113, 161);
+  }
 button {
     text-transform: capitalize;
 
