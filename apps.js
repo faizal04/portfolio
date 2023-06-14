@@ -44,12 +44,12 @@ function toggleDisplay(elementToShow) {
         elementToShow.style.display = "block";
     }
 }
-let loader = document.querySelector(".loader");
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    loader.parentElement.removeChild(loader);
-  }, 3500);
-});
+// let loader = document.querySelector(".loader");
+// window.addEventListener("load", function () {
+//   setTimeout(function () {
+//     loader.parentElement.removeChild(loader);
+//   }, 3500);
+// });
 
 
 const hamburger = document.querySelector('.hamburger');

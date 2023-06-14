@@ -1,4 +1,4 @@
-
+/* 
 .loader{
     background-color: black;
     position: fixed;
@@ -46,4 +46,98 @@
         to {
         opacity: 100;
         }
-    }
+    } */
+
+
+
+    
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+}
+.preloader{
+    /* background-color: black; */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Questrial, Impact, sans-serif;
+    z-index: 20;
+    
+}
+#container{
+    background: #000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+#container p{
+    font-family: 'Ceviche One', cursive;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 4px;   
+}
+body{
+    height: 100%;
+}
+
+.loading-page{
+    background: linear-gradient(to bottom, #2f2c64, #222121, #0f2027);
+
+    position: absolute;
+ top: 0;
+ left: 0;
+    height: 100%;
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1.5rem;
+
+}
+#logo{
+    height: 100px;
+    stroke: #fff;
+    color: #fff;
+    stroke-width: 5px;
+    fill-opacity: 0;
+    stroke-dasharray: 6000;
+    animation: draw 6s ease-in;
+}
+.logoname{
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    color: #fff;
+    
+}
+@keyframes draw {
+    0%{
+stroke-dashoffset: 6000;    }
+    100%{
+stroke-dashoffset: 0%;    }
+}
+.name-container {
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  .logoname {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+
