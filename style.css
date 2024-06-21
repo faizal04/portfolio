@@ -13,18 +13,20 @@ h4,
 li {
     text-transform: capitalize;
 }
-::placeholder { 
+
+::placeholder {
     color: rgb(113, 113, 161);
-    opacity: 1; 
-  }
-  
-  :-ms-input-placeholder { 
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
     color: rgb(113, 113, 161);
-  }
-  
-  ::-ms-input-placeholder { 
+}
+
+::-ms-input-placeholder {
     color: rgb(113, 113, 161);
-  }
+}
+
 button {
     text-transform: capitalize;
 
@@ -87,7 +89,7 @@ h1 {
 }
 
 .loc-head {
-display: block;
+    display: block;
     display: flex;
     flex: 1 1 20rem;
     justify-content: space-around;
@@ -131,13 +133,15 @@ display: block;
     display: flex;
     flex-direction: column;
 }
-.subject{
+
+.subject {
     font-size: 3rem;
     text-transform: capitalize;
     font-weight: 900;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .para {
     display: flex;
     justify-content: center;
@@ -171,7 +175,7 @@ display: block;
 
 .main-head {
     /* overflow: hidden; */
-    min-height:15vh;
+    min-height: 15vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -204,14 +208,14 @@ display: block;
     /* background: rgb(156, 24, 24); */
     border: 3px solid white;
     position: relative;
-    transition: all 2s ease-in-out;
+    transition: all ease-in-out;
 }
 
 .project1 img {
     height: 100%;
     background: linear-gradient(217deg, rgba(255, 0, 0, 0.664), rgba(37, 39, 154, .4) 70.71%);
     position: absolute;
-    transition: all 2s ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 
@@ -220,7 +224,7 @@ display: block;
     height: 100%;
     z-index: 2;
     justify-content: end;
-    align-items: end;   
+    align-items: end;
 }
 
 .project1 a {
@@ -229,9 +233,12 @@ display: block;
     z-index: 10;
     color: orange;
 }
-.inv{
+
+.inv {
     filter: invert();
 }
+
+
 
 
 
@@ -280,7 +287,7 @@ display: block;
 /*  section 5 starts here  */
 .section5 {
     background-color: black;
-   min-height: 50vh;
+    min-height: 50vh;
 
     display: flex;
     position: relative;
@@ -288,7 +295,7 @@ display: block;
 }
 
 .contact {
-    
+
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -362,11 +369,11 @@ footer h2 {
 
 
 .hamburger {
-  display: none;
-  cursor: pointer;
-  width: 2.5rem;
-  height: 2rem;
-  position: relative;
+    display: none;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2rem;
+    position: relative;
     top: 0.5rem;
     right: 2rem;
 }
